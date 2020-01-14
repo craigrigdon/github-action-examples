@@ -1,0 +1,17 @@
+name: dev_push
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Run a one-line script
+      run: echo $GITHUB_WORKFLOW Action has fired successfully!
+
