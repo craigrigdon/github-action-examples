@@ -1,4 +1,7 @@
 name: dev_pull_closed
+# this will run for both on merge closed  with success and
+# unmerged closed pr with failure
+# not good if you are trying to conserve action cycles
 
 on:
   pull_request:

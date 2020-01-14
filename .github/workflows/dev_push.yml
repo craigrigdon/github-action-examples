@@ -1,4 +1,5 @@
 name: dev_push
+# this will trigger on merge closed pr and successful push
 
 on:
   push:
